@@ -22,3 +22,4 @@ symlinks:
     dest:               "/etc/nginx/sites-enabled/transmission.ssl"
 restart_services:
   - 'nginx'
+  - 'nginx'
