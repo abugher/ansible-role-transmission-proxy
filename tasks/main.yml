@@ -1,8 +1,6 @@
 ---
 - include_tasks:        '../tasks/template_files.yml'
-- include_tasks:        '../tasks/install_files.yml'
 - include_tasks:        '../tasks/symlinks.yml'
 - include_tasks:        '../tasks/restart_services.yml'
-  when:                 install_files_result.changed 
+  when:                 template_files_result.changed
                         or symlinks_result.changed
-                        or template_files_result.changed

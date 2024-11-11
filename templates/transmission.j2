@@ -1,0 +1,6 @@
+server {
+        listen          80;
+	server_name     transmission transmission.{{ domain }};
+        return 301      https://transmission.{{ domain }}$request_uri;
+}
+
